@@ -80,6 +80,8 @@ align-items: center;
     text-transform: uppercase;
     color: #4D5AE5;
     margin-right: 76px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .part-of-logo{
@@ -100,7 +102,7 @@ align-items: center;
 .page-contacts{
     font-style: normal;
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 
 .contacts{
@@ -120,14 +122,14 @@ align-items: center;
 
 .hero {
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
 }
 
 .main-title{
@@ -286,8 +288,6 @@ align-items: center;
 
 .part-of-logo-footer{
     color: #F4F4FD;
-    display: inline-block;
-    margin-bottom: 16px;
 }
 
 
