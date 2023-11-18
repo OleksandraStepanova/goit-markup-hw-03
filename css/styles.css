@@ -4,6 +4,11 @@ body {
     background-color: #FFFFFF;
 }
 
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 a{
     text-decoration: none;
 }
@@ -15,6 +20,54 @@ a:hover, a:active, a:focus{
 
 ul{
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.container{
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1160px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-navigation{
+display: flex;
+justify-content: space-between;
+width: 452px;
+align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: right;
+    column-gap: 40px;
 }
 
 .page-logo{
@@ -31,24 +84,32 @@ ul{
     color: #2E2F42;
 }
 
-.menu{
+.menu-link{
+    display: block;
     color: #2E2F42;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: 0.32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .page-contacts{
-font-style: normal;
+    font-style: normal;
+    display: flex;
+    column-gap: 40px;
 }
 
 .contacts{
+    display: block;
     color: inherit;
     font-size: 16px;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    padding-bottom: 24px;
+    padding-top: 24px;
 }
 
 .contacts:hover{
@@ -62,10 +123,23 @@ font-style: normal;
     line-height: 1.07;
     letter-spacing: 1.12px;
     text-align: center;
+    width: 496px;
 }
 
 .hero{
     background-color: #2E2F42;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.benefits{
+    display: flex;
+    column-gap: 24px;
 }
 
 .team{
@@ -73,7 +147,19 @@ font-style: normal;
 }
 
 .team-list{
+    display: flex;
+    column-gap: 24px;
+    margin-top: 72px;
+}
+
+.team-item{
     background-color: #FFFFFF;
+    width: 264px;
+    padding-bottom: 32px;
+}
+
+.team-image{
+    margin-bottom: 32px;
 }
 
 .order-button{
@@ -83,6 +169,10 @@ font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.64px;
     background-color: #4D5AE5;
+    height: auto;
+    padding: 16px 32px;
+    margin-top: 48px;
+    border: 0;
 }
 
 .order-button:hover, .order-button:focus{
@@ -106,6 +196,7 @@ font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
 }
 
 .benefits-description{
@@ -121,6 +212,7 @@ font-style: normal;
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
 }
 
 .position{
@@ -130,12 +222,30 @@ font-style: normal;
     text-align: center;
 }
 
+.case{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.case-item{
+    padding-bottom: 32px;
+}
+
+.case-image{
+    margin-bottom: 32px;
+}
 .case-name{
     color: #2E2F42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .case-type{
@@ -143,6 +253,8 @@ font-style: normal;
     letter-spacing: 0.32px;
     line-height: 1.5;
     font-size: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .part-of-logo-footer{
@@ -156,8 +268,12 @@ font-style: normal;
     line-height: 1.5;
     font-size: 16px;
     letter-spacing: 0.32px;
+    width: 264px;
+    margin-top: 18px;
 }
 
 .page-footer {
     background-color: #2E2F42;
+    padding-bottom: 101px;
+    padding-top: 100px;
 }
