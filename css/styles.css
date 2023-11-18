@@ -25,17 +25,16 @@ ul{
     padding-left: 0;
 }
 
-section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+img{
+    display: block;
 }
+
 .container{
     box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
-    width: 1160px;
-    padding-left: 16px;
-    padding-right: 16px;
+    width: 1158px;
+    padding: 0 15px 0 15px;
 }
 
 .visually-hidden {
@@ -51,11 +50,12 @@ section{
     overflow: hidden;
 }
 
-
+.page-header{
+border-bottom: 1px solid #E7E9FC;
+}
 .header-container {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .page-navigation{
@@ -68,7 +68,7 @@ align-items: center;
 .menu{
     display: flex;
     justify-content: right;
-    column-gap: 40px;
+    gap: 40px;
 }
 
 .page-logo{
@@ -79,6 +79,7 @@ align-items: center;
     letter-spacing: 0.54px;
     text-transform: uppercase;
     color: #4D5AE5;
+    margin-right: 76px;
 }
 
 .part-of-logo{
@@ -117,6 +118,18 @@ align-items: center;
     color: #404BBF;
 }
 
+.hero {
+    background-color: #2E2F42;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
 .main-title{
     color: #FFF;
     font-size: 56px;
@@ -124,48 +137,10 @@ align-items: center;
     line-height: 1.07;
     letter-spacing: 1.12px;
     text-align: center;
-    width: 496px;
+    max-width: 496px;
 }
 
-.hero{
-    background-color: #2E2F42;
-}
-.hero-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 68px;
-    padding-bottom: 68px;
-}
-
-.benefits{
-    display: flex;
-    column-gap: 24px;
-}
-
-.team{
-    background-color: #F4F4FD;
-}
-
-.team-list{
-    display: flex;
-    column-gap: 24px;
-    margin-top: 72px;
-}
-
-.team-item{
-    background-color: #FFFFFF;
-    width: 264px;
-    padding-bottom: 32px;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.team-image{
-    margin-bottom: 32px;
-}
-
-.order-button{
+.order-button {
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
@@ -176,7 +151,45 @@ align-items: center;
     padding: 16px 32px;
     margin-top: 48px;
     border: 0;
+    min-width: 169px;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
+.benefits{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.benefits-list{
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-item{
+    width: calc((100% - 72px) / 4);;
+}
+
+.team{
+    background-color: #F4F4FD;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.team-list{
+    display: flex;
+    gap: 24px;
+}
+
+.team-item{
+    background-color: #FFFFFF;
+    width: 264px;
+    padding-bottom: 32px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+
 
 .order-button:hover, .order-button:focus{
    background-color: #404BBF;
@@ -191,6 +204,11 @@ align-items: center;
     letter-spacing: 0.72px;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.members-info{
+    padding: 32px 0 32px;
 }
 
 .benefits-name{
@@ -216,6 +234,8 @@ align-items: center;
     font-weight: 500;
     letter-spacing: 0.4px;
     margin-bottom: 8px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .position{
@@ -226,6 +246,11 @@ align-items: center;
 }
 
 .case{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.case-list{
     display: flex;
     flex-wrap: wrap;
     margin-top: 72px;
@@ -233,9 +258,12 @@ align-items: center;
     row-gap: 48px;
 }
 
-.case-item{
-    padding-bottom: 32px;
+.case-info{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
+
 
 .case-image{
     margin-bottom: 32px;
@@ -247,8 +275,6 @@ align-items: center;
     line-height: 1.2;
     letter-spacing: 0.4px;
     margin-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 .case-type{
@@ -256,12 +282,12 @@ align-items: center;
     letter-spacing: 0.32px;
     line-height: 1.5;
     font-size: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 .part-of-logo-footer{
     color: #F4F4FD;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 
@@ -272,11 +298,9 @@ align-items: center;
     font-size: 16px;
     letter-spacing: 0.32px;
     width: 264px;
-    margin-top: 18px;
 }
 
 .page-footer {
     background-color: #2E2F42;
-    padding-bottom: 101px;
-    padding-top: 100px;
+    padding: 100px 0;
 }
